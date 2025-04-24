@@ -6,9 +6,10 @@ A customizable plugin for few cool features, including:
 ### For two last functions, it needs AntiRelog plugin to be installed. First one is working perfectly fine standalone!
 
 # How to install:
-``` Build/download .jar file of this plugin;
-Open your "plugins" folder;
-Put .jar file in plugins.
+```
+1. Build/download .jar file of this plugin
+2. Open your "plugins" folder
+3. Put .jar file in plugins
 You're all set!
 ```
 # Important note!
