@@ -15,10 +15,10 @@ public class ARM extends JavaPlugin {
     public void load(){
         config = YamlConfiguration.loadConfiguration(new File(path));
         if(!config.contains("expCooldown"))
-            config.set("expCcoldown", local.expCooldown);
+            config.set("expCooldown", local.expCooldown);
         if(!config.contains("teleportErrorMessageOrigin"))
-            config.set("teleportErrorMessageSender", local.teleportErrorMessageOrigin);
-        if(!config.contains("teleportErrorMessageSerner"))
+            config.set("teleportErrorMessageOrigin", local.teleportErrorMessageOrigin);
+        if(!config.contains("teleportErrorMessageSender"))
             config.set("teleportErrorMessageSender", local.teleportErrorMessageSender);
         if(!config.contains("ECErrorMessage"))
             config.set("ECErrorMessage", local.ECErrorMessage);
