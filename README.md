@@ -4,6 +4,7 @@ A customizable plugin for few cool features, including:
 - Making player unable to use ender chest, while he's in PvP!
 - Also, players can't teleport to each other, if they have PvP!
 ### For two last functions, it needs AntiRelog plugin to be installed. First one is working perfectly fine standalone!
+### For last function, you need Essentials.
 
 # How to install:
 ```
