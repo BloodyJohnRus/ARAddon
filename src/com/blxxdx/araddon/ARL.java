@@ -23,6 +23,8 @@ public class ARL implements Listener {
     @EventHandler
     public void throwing(PlayerInteractEvent event){
         var player = event.getPlayer();
+        //OP are bypassing restrictions
+        if(player.hasPermission("araddon.op")) return;
         //First, checking if player clicks on ender chest
         if(event.getAction()== Action.RIGHT_CLICK_BLOCK){
             //Removing duplicate interact(often bug on 1.16.5 core)
@@ -73,6 +75,8 @@ public class ARL implements Listener {
         var player2 = Bukkit.getPlayer(event.getRequester().getUUID());
         //There's no sense if some of players ain't alive, right?
         if(player1==null || player2==null) return;
+        //OP are bypassing restrictions
+        if(player1.hasPermission("araddon.op")) return;
         //Checking if someone has cooldown
         if(((Antirelog) ar).getPvpManager().isInPvP(player1) || ((Antirelog) ar).getPvpManager().isInPvP(player2)){
             //Cancelling event
