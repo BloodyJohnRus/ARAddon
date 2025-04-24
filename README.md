@@ -4,7 +4,17 @@ A customizable plugin for few cool features, including:
 - Making player unable to use ender chest, while he's in PvP!
 - Also, players can't teleport to each other, if they have PvP!
 ### For two last functions, it needs AntiRelog plugin to be installed. First one is working perfectly fine standalone!
-### For last function, you need Essentials.
+
+# Dependencies:
+- Essentials
+- PlaceholderAPI
+
+# Placeholders
+Note: works only with AntiRelog plugin installed.
+```
+bool:%araddon_in_pvp% - shows if player in PvP mode [true/false]
+bool:%araddon_in_pvp_<name>% - sends if specific player "Name" in PvP mode [true/false]
+```
 
 # How to install:
 ```
