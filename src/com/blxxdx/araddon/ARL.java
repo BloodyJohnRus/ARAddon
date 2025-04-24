@@ -53,7 +53,7 @@ public class ARL implements Listener {
                 long lastCooldown = lastUsedBottle.get(player.getName());
                 if(System.currentTimeMillis()-lastCooldown<=ARM.getInstance().getLocalConfig().expCooldown)
                     event.setCancelled(true);
-                lastUsedBottle.put(player.getName(), System.currentTimeMillis());
+                else lastUsedBottle.put(player.getName(), System.currentTimeMillis());
             }
         }
         //We're good with this function!

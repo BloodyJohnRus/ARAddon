@@ -54,5 +54,6 @@ public class ARM extends JavaPlugin {
         getCommand("araddon").setExecutor(new ARC());
         load();
         getServer().getPluginManager().registerEvents(new ARL(), this);
+        if(getServer().getPluginManager().getPlugin("PlaceholderAPI")!=null) new ARP(this).register();
     }
 }
