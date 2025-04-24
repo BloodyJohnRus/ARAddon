@@ -23,5 +23,6 @@ bool:%araddon_in_pvp_<name>% - sends if specific player "Name" in PvP mode [true
 3. Put .jar file in plugins
 You're all set!
 ```
+### To use/build this plugin, you need Java 11 or higher to be installed.
 # Important note!
 ### This plugin strictly works on 1.16 core only(certified Paper user).
