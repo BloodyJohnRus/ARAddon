@@ -1,6 +1,8 @@
 package com.blxxdx.araddon;
 
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
+import org.bukkit.Bukkit;
+import org.bukkit.OfflinePlayer;
 import org.jetbrains.annotations.NotNull;
 import org.bukkit.entity.Player;
 import ru.leymooo.antirelog.Antirelog;
@@ -39,6 +41,26 @@ public class ARP extends PlaceholderExpansion {
         if(player==null) return "false";
         var ar = instance.getServer().getPluginManager().getPlugin("AntiRelog");
         if(ar==null) return "false";
-        return ((Antirelog) ar).getPvpManager().isInPvP(player.getPlayer())+"";
+        if(params.equals("in_pvp"))
+            return ((Antirelog) ar).getPvpManager().isInPvP(player.getPlayer())+"";
+        if(params.startsWith("in_pvp_")){
+            String nick = params.replace("in_pvp_", "");
+            if(Bukkit.getPlayer(nick)!=null)
+                return ((Antirelog) ar).getPvpManager().isInPvP(Bukkit.getPlayer(nick))+"";
+        }
+        return "false";
+    }
+    public String onRequest(OfflinePlayer player, @NotNull String params) {
+        if(player==null) return "false";
+        var ar = instance.getServer().getPluginManager().getPlugin("AntiRelog");
+        if(ar==null) return "false";
+        if(params.equals("in_pvp"))
+            return ((Antirelog) ar).getPvpManager().isInPvP(player.getPlayer())+"";
+        if(params.startsWith("in_pvp_")){
+            String nick = params.replace("in_pvp_", "");
+            if(Bukkit.getPlayer(nick)!=null)
+                return ((Antirelog) ar).getPvpManager().isInPvP(Bukkit.getPlayer(nick))+"";
+        }
+        return "false";
     }
 }
