@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ARAddon">
+    <output-path>$PROJECT_DIR$/../../../ChillNetwork/plugins/</output-path>
+    <root id="archive" name="ARAddon.jar">
+      <element id="module-output" name="ARAddon" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/plugin.yml" />
+    </root>
+  </artifact>
+</component>

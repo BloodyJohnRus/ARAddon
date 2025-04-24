@@ -1,0 +1,12 @@
+name: ARAddon
+main: com.blxxdx.araddon.ARM
+version: 1
+api-version: 1.16
+softdepend:
+  - "Essentials"
+commands:
+  araddon:
+    permission: araddon.op
+permissions:
+  araddon.op:
+    default: op
